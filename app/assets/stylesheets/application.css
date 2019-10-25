@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+    margin: 0;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+    /*box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5); */
+}
+
+.cover-container {
+    max-width: 52em;
+}
+
+html, body {
+    height: 100%;
+    background-color: #222629;
+}
+
+.colorb {
+  background-color: #333;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.h3, h3 {
+    font-size: 1.75rem;
+}
+
+span {
+    color: #2a5885;
+}
+
+#testt {
+    color:white;
+    background-color: #587096;
+    border: 3px solid #37455b;
+    height: 470px;
+    width: 180px;
+
+    float: left;
+    box-shadow: 3px 3px #37455b;
+    border-radius: 13px;
+}
+
+.ots {
+    padding:20px;
+    text-align:center;
+}
+.wrapper {
+    display: flex;
+    float: right;
+    height: 20px;
+    align-items: stretch;
+    border: 3px solid white;
+}
