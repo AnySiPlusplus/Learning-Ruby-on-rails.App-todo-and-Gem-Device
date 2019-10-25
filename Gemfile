@@ -63,4 +63,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
-gem 'haml-rails'
+gem 'haml-rails' 
+
+group :development do 
+  gem "hpricot"
+  gem "ruby_parser"
+end

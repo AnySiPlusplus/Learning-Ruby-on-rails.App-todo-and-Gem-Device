@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Pogiloy
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .d-flex.w-100.h-100.p-3.mx-auto.flex-column
+      .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.colorb.shadow-sm
+        %h5.my-0.mr-md-auto.font-weight-bolt= link_to 'ITproject', home_path
+        %span.p-2.text-dark
+          = link_to "Создание поста", new_post_path
+        %span.p-2.text-dark
+          = link_to "Авторизация", new_user_session_path
+        %span.p-2.text-dark
+          = link_to "Регистрация", new_user_registration_path
+      .cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.cover-container.d-flex.w-100.h-100.p-3.mx-auto.flex-column.fl
+        = yield

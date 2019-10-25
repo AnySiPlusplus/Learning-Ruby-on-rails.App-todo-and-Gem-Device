@@ -1,0 +1,16 @@
+- if user_signed_in?
+  %h4 Добавление нового поста
+  = form_for :post ,url: posts_path do |f|
+    - if @post.errors.any?
+      - @post.errors.full_messages.each do |msg|
+        .alert.alert-danger= msg
+    %p
+      Название статьи
+      %br/
+      = f.text_field(:title, {:class => 'form-control'})
+    %p
+      Текс статьи
+      %br/
+      = f.text_area(:body, {:class => 'form-control'})
+    %p
+      = f.submit ({:class => 'btn btn-success'})
